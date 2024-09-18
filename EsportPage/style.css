@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+    margin-top: 30px;
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(8, 8, 8, 0.5);
+    object-fit: cover;
+}
+
+.event-info {
+    position: relative;
+    background-color: rgba(171, 171, 171, 0.8);
+    padding: 20px;
+    margin: 30px auto;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1e1c1c;
+    text-align: center;
+}
+
+.event-info p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.sponsors {
+    position: relative;
+    background-color: rgba(171, 171, 171, 0.8);
+    padding: 20px;
+    margin: 40px auto;
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 10px;
+    color: #1e1c1c;
+}
+
+.event-info h2 {
+    text-align: center;
+    margin-right: 20px;
+}
+  
+.sponsors h2 {
+    text-align: center;
+    margin-right: 20px;
+}
+
+.sponsor-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sponsor-logos img {
+    max-width: 150px;
+    margin: 20px;
+}
+
+.image-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+  
+.image-a {
+    background-image: url("../assets/E-Sport Page/Wallpaper/Tournament Racing.jpg");
+    background-size: cover;
+    background-position: center;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    filter: brightness(0.3) blur(1px);
+}
+  
+.image-b {
+    background-image: url("../assets/E-Sport Page/Wallpaper/Racing Mclaren Tournament.jpg");
+    background-size: cover;
+    background-position: center;
+    top: 99%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(0.3) blur(1px);
+}
+
+/* added media queries for responsive design */
+
+@media (max-width: 1200px) {
+    .event-info {
+      width: 90%;
+      max-width: 600px;
+    }
+    .sponsors {
+      width: 90%;
+      max-width: 800px;
+    }
+    video {
+      height: 60vh;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    video {
+      height: 50vh;
+    }
+    .event-info {
+      width: 95%;
+      max-width: 400px;
+    }
+    .sponsors {
+      width: 95%;
+      max-width: 600px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .event-info {
+      width: 100%;
+      max-width: none;
+    }
+    .sponsors {
+      width: 100%;
+      max-width: none;
+    }
+    .sponsor-logos img {
+      max-width: 100px;
+    }
+    video {
+      height: 40vh;
+    }
+  }
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+}

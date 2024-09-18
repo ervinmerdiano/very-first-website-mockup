@@ -1,0 +1,194 @@
+:root {
+    --clr-primary: hsl(263, 81%, 45%);
+    --clr-text-dark: hsl(250, 15%, 8%);
+    --clr-text-light: hsl(240, 4%, 57%);
+    --clr-bg: hsl(225, 62%, 95%);
+    --clr-neutral: hsl(222,23%, 91%);
+    --clr-white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button, ul, li {
+    all: unset;
+}
+
+.tab-container {
+    width: 100vw!important;
+    max-width: 100%!important;
+    margin: 0 auto!important;
+
+    display: flex;
+    flex-direction: column;
+    background-color: var(--clr-white);
+    margin-top: 320px;
+}
+
+.tab-menu{
+    display: flex;
+    width: 100%;
+}
+
+.tab-menu > .tab {
+    flex: 1;
+    background-color: var(--clr-neutral);
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.tab-menu > .tab:not(:last-child) {
+    border-right: 2px solid var(--clr-white);
+}
+
+.tab-menu > .tab.active {
+    background-color: var(--clr-white);
+}
+
+.tab > a {
+    width: 100%;
+    height: 100%;
+    padding: 28px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--clr-text-dark);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+.tab-menu > .tab.active > a {
+    color: var(--clr-primary);
+}
+
+.tab-panels {
+    padding: 48px;
+    width: 100%;
+}
+
+.panel {
+    width: 100%;
+    max-width: 100vw; 
+    margin: 0 auto;
+    padding: 48px;
+  }
+
+.panel > h3 {
+    font-size: 32px;
+    color: var(--clr-text-dark);
+    margin-bottom: 20px;
+}
+
+.panel > p {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 28px;
+}
+
+.panel > button {
+    padding: 10px 28px;
+    color: var(--clr-white);
+    background-color: var(--clr-text-dark);
+    border-radius: 6px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: opacity 0.2s
+}
+
+.panel > button:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .tab-container {
+        margin-top: 150px;
+    }
+
+    .tab-menu {
+        flex-direction: column;
+    }
+
+    .tab-menu > .tab {
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    .tab-menu > .tab:not(:last-child) {
+        border-right: none;
+        border-bottom: 2px solid var(--clr-white);
+    }
+
+    .tab > a {
+        padding: 20px;
+    }
+
+    .tab-panels {
+        padding: 24px;
+    }
+
+    .panel {
+        padding: 24px;
+    }
+
+    .panel > h3 {
+        font-size: 24px;
+    }
+
+    .panel > p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .panel > button {
+        padding: 6px 20px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .tab-container {
+        margin-top: 100px;
+    }
+
+    .tab-menu > .tab {
+        font-size: 14px;
+        padding: 16px;
+    }
+
+    .tab > a {
+        padding: 16px;
+    }
+
+    .tab-panels {
+        padding: 16px;
+    }
+
+    .panel {
+        padding: 16px;
+    }
+
+    .panel > h3 {
+        font-size: 20px;
+    }
+
+    .panel > p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .panel > button {
+        padding: 4px 16px;
+        font-size: 10px;
+    }
+}

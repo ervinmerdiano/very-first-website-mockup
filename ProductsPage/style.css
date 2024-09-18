@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 167.5vh;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../assets/Products Page/Wallpaper/Car Meeting.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    backdrop-filter: blur(5px);
+    margin: 0rem;
+}
+
+figcaption {
+    font-size: 16px;
+    color: #333;
+  
+    padding: 10px;
+    margin-top: 10px;
+  
+    text-align: center;
+  
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+  
+    border-radius: 10px;
+    display: block;
+    font-weight: bold;
+  }
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    flex: 1;
+}

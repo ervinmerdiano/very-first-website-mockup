@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-gamefolt {
+    height: 100px;
+    margin: 65px auto;
+}
+
+blockquote {
+    font-size: 25px;
+    font-style: italic;
+    margin: 20px auto;
+    max-width: 1500px;
+}
+
+footer {
+    background-color: #e2e2ee;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    align-items: center;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+footer nav ul li {
+    display: inline;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: rgb(204, 57, 57);
+    font-weight: bold;
+}
+
+.footer-image {
+    margin: 20px 0;
+}
+
+.footer-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+footer p {
+    margin: 10px 0;
+}

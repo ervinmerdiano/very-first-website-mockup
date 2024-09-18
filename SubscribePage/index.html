@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../SubscribePage/style.css">
+    <link rel="stylesheet" href="../SubscribePage/Resource/header.css">
+    <link rel="stylesheet" href="../SubscribePage/Resource/footer.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+
+<body>
+
+    <header class="header">
+
+        <a href="#" class="logo">
+            <img src="../assets/Home Page/Logos and Texts/asphatl-text.png" alt="asphatl-text">
+        </a>
+        
+        <input type="checkbox" id="check">
+
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+
+        <nav class="navbar">
+
+            <a href="../HomePage/index.html" class="nav-link"">Home</a>
+            <a href="../ProductsPage/index.html" class="nav-link"">Products</a>
+            <a href="../EsportPage/index.html" class="nav-link">Esport</a>
+            <a href="../NewsPage/index.html" class="nav-link">News</a>
+            <a href="../SubscribePage/index.html" class="nav-link"">Subscription</a>
+
+        </nav>
+
+    </header>
+
+    <main class="main-content">
+
+        <div class="form-container">
+
+            <div class="car-image">
+                <img src="../assets/Subscription/Subscription Form/Wallpaper/Mclaren P1 GT.jpg" alt="McLaren P1 GT">
+            </div>
+
+            <div class="registration-text">
+
+                <h1>GET THE <span class="highlight">MCLAREN P1 GTR</span> BY BECOMING OUR <span class="highlight">EXCLUSIVE VIEWERS</span></h1>
+                <p>Before becoming our exclusive viewers, please register your information below.</p>
+
+            </div>
+
+            <br>
+            <br>
+
+            <div class="registration-form">
+                
+                <div class="form-logo">
+                    <img src="../assets/Footer/asphatl-Logo.png" alt="asphatl-Logo">
+                </div>
+
+                <form id="registrationForm" action="../HomePage/index.html" method="GET"> 
+                    
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <span id="error-name" class="error"></span>
+            
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email">
+                    <span id="error-email" class="error"></span>
+            
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                    <span id="error-pass" class="error"></span>
+            
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword">
+                    <span id="error-confirm" class="error"></span>
+            
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob">
+                    <span id="error-dob" class="error"></span>
+            
+                    <label for="gender">Gender:</label>
+                    <div class="gender-options">
+                        <input type="radio" id="genderM" name="gender" value="male"> <label for="genderM">Male</label>
+                        <input type="radio" id="genderF" name="gender" value="female"> <label for="genderF">Female</label>
+                    </div>
+                    <span id="error-gender" class="error"></span>
+            
+                    <div class="terms">
+                        <input type="checkbox" id="terms" name="terms">
+                        <label for="terms">I agree to terms and conditions</label>
+                    </div>
+                    <span id="error-terms" class="error"></span>
+            
+                    <br><br>
+
+                    <button type="submit">Subscribe</button>
+
+                </form>
+
+            </div>
+            
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="logo-container">
+            <img src="../assets/Footer/gamefoltblack.png" alt="gamefoltblack" class="logo-gamefolt">
+        </div>
+
+        <blockquote>
+            “What does it take to be the fastest in the race? Your car. What does it take to be the best in the race? The driver. Then what does it take to race? Speed. Speed takes us there, and we trailblaze it with our car.”
+        </blockquote>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <nav>
+            <ul>
+                <li><a href="#">TERMS & CONDITIONS</a></li>
+                <li><a href="#">LEGAL NOTICE</a></li>
+                <li><a href="#">PRIVACY POLICY</a></li>
+                <li><a href="#">EULA</a></li>
+                <li><a href="#">COOKIE POLICY</a></li>
+            </ul>
+        </nav>
+
+        <br>
+
+        <div class="footer-image">
+            <img src="../assets/Footer/Headlight Mclaren Behind.png" alt="Headlight Mclaren Behind">
+        </div>
+
+        <p>&copy; 2016 GameFolt. All Rights Reserved.</p>
+        
+    </footer>
+
+    <script src="../SubscribePage/script.js"></script>
+    
+</body>
+</html>
